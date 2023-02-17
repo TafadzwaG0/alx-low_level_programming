@@ -21,17 +21,17 @@ int main(void)
 				if (i < j && j < k)
 				{
 					putchar(i + '0');
-					putcher(j + '0');
-					putcher(k + '0');
+					putchar(j + '0');
+					putchar(k + '0');
 					if (i + j + k != 24)
 					{
 						putchar(',');
-						putcher(' ');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putcher('\n');
+	putchar('\n');
 	return (0);
 }
