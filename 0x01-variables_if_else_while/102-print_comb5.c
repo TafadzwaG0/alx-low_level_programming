@@ -1,51 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
- * main - main function
+ * main - Entry point
  *
- * Return: always 0
+ * Return: Always 0
  */
 
 int main(void)
 {
-	int c = 0;
-	int f_d;
-	int 1_d;
+	int p, q;
 
-	int c2;
-	int f_d2;
-	int 1_d2;
-
-	while (c <= 98)
+	for (p = 0; p <= 98; p++)
 	{
-		f_d = (c / 10 + '0');
-		1_d = (c % 10 + '0');
-		c2 = 0;
-		while (c2 <= 99)
-		{
-			f_d2 = (c2 / 10 + '0');
-			1_d2 = (c2 % 10 + '0');
 
-			if (c < c2)
-			{
-				putchar(f_d);
-				putchar(1_d);
-				putchar(' ');
-				putchar(f_d2);
-				putchar(1_d2);
-
-				if (c != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			c2++;
-		}
-		c++;
+	for (q = p + 1; q <= 99; q++)
+	{
+	putchar((p / 10) + '0');
+	putchar((p % 10) + '0');
+	putchar(' ');
+	putchar((q / 10) + '0');
+	putchar((q % 10) + '0');
+	if (p == 98 && q == 99)
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
 }
-
