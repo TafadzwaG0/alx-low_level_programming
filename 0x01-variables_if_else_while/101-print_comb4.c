@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <studio.h>
 
 /**
  * main - main function
@@ -18,18 +18,20 @@ int main(void)
 		{
 			for (k = 2 ; k < 10 ; k++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i + j + k != 24)
+				if (i < j && j < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i + '0');
+					putcher(j + '0');
+					putcher(k + '0');
+					if (i + j + k != 24)
+					{
+						putchar(',');
+						putcher(' ');
+					}
 				}
 			}
 		}
 	}
-}
-putchar('\n');
-return (0);
+	putcher('\n');
+	return (0);
 }
