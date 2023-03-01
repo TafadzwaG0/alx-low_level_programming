@@ -1,0 +1,1 @@
+0x06-pointers_arrarys_strings
